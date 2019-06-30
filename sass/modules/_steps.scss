@@ -1,0 +1,81 @@
+
+%remain-steps{
+  &:before {
+    content: counter(stepNum);
+    font-family: inherit;
+    font-weight: 700;
+  }
+  &:after{
+    background-color: $white;
+  }
+}
+
+.steps{
+    margin-bottom:65px;
+}
+.multi-steps{
+    font-weight: 600;
+font-size: 18px;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  > li{
+    color:$main-green;
+    z-index: 1;
+    counter-increment: stepNum;
+    text-align: center;
+    display: table-cell;
+    position: relative;
+    color: linear-gradient(89.85deg, #23BCBA 0%, #45E994 100%);
+
+    &:before{
+      content: '\f00c';
+      content: '\2713;';
+      content: '\10003';
+      content: '\10004';
+      content: '\2713';
+      display: block;
+      margin: 0 auto 4px;
+      background-color: $white;
+      width: 67px;
+      height: 67px;
+      line-height: 65px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 200px;
+    }
+    &:after{
+      content: '';
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(89.85deg, #23BCBA 0%, #45E994 100%);
+      position: absolute;
+      top: 32px;
+      left: 50%;
+      z-index: -1;
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+
+    &.is-active{
+        color:$white;
+      @extend %remain-steps;
+      &:before{
+        background: linear-gradient(89.85deg, #23BCBA 0%, #45E994 100%);
+        border:none;
+      }
+
+      ~ li{
+        @extend %remain-steps;
+        &:before{
+          background-color: white;
+          border:none;
+        }
+      }
+    }
+  }
+}

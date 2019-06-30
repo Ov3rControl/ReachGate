@@ -1,0 +1,17 @@
+.navbar {
+    min-height: 6.25rem;
+    background: $bg-transperant;
+    .navbar-item img {
+        max-height: 2.75rem;
+    }
+    .navbar-brand, .navbar-burger { // To Center Items inside the container
+        height: 100;
+        color:$primary;
+    }
+
+}
+.is-2by1{
+    left: 0px;
+    top: -100px;
+}
+

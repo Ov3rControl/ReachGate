@@ -1,0 +1,53 @@
+.Title{
+    color: $primary;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    opacity: 0.9;
+}
+h2{
+    padding: 0px 20px 0px 20px;
+}
+.main-p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 32px;
+}
+.sub-title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: $sub-title;
+}
+p{
+    color: $paragraphs-color;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px 20px 0px 20px;
+}
+body{
+    background-color: $background-color;
+    font-family: 'Poppins', sans-serif;
+}
+.section{
+    box-shadow: 0 10px 10px 0px rgb(227, 227, 230);
+}
+.our-services{
+    background:#F2F8FC;
+}
+//Gradient Button
+.btn-grad{
+    margin-bottom:100px;
+    height: 50px;
+    width: 159px;
+    background: linear-gradient(162.54deg, #23BCBA 0%, #45E994 100%);
+    border-radius: 81px;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 14px;
+    border:none;
+}
+.btn-grad:hover 
+{ background-position: right center;
+}
