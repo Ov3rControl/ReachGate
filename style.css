@@ -6676,6 +6676,10 @@ label.panel-block {
       flex: none;
       width: 100%; } }
 
+.main {
+  background-image: url("src/img/newsletter.png");
+  height: 480px; }
+
 .navbar {
   min-height: 6.25rem;
   background: rgba(255, 255, 255, 0.9); }
@@ -6684,10 +6688,6 @@ label.panel-block {
   .navbar .navbar-brand, .navbar .navbar-burger {
     height: 100;
     color: #4399CE; }
-
-.is-2by1 {
-  left: 0px;
-  top: -100px; }
 
 .our-story div, .our-story div, .our-story img, .our-story h2 {
   padding: 20px; }
