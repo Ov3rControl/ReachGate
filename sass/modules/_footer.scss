@@ -22,6 +22,26 @@ footer{
         opacity: 0.8;
         border-radius: 6px;
     }
+    label{
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: flex-end;
+        color: #999999;
+    }
+    .socialmedia{
+        .fab{
+            padding: 0px 15px 0px 15px;
+            font-size: 20px;
+            color:#DADADA;
+        }
+        .fa-facebook-f{
+            opacity: 0.8;
+        }
+        .fa-twitter{
+            color: #23BCBA;
+        }
+    }
     .address{
         line-height: 36px;
     }

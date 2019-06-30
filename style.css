@@ -5660,7 +5660,7 @@ label.panel-block {
 
 .footer {
   background-color: #fafafa;
-  padding: 3rem 1.5rem 6rem; }
+  padding: 3rem 1.5rem 2rem; }
 
 .column {
   display: block;
@@ -6875,6 +6875,24 @@ footer h6 {
 footer img {
   opacity: 0.8;
   border-radius: 6px; }
+
+footer label {
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: flex-end;
+  color: #999999; }
+
+footer .socialmedia .fab {
+  padding: 0px 15px 0px 15px;
+  font-size: 20px;
+  color: #DADADA; }
+
+footer .socialmedia .fa-facebook-f {
+  opacity: 0.8; }
+
+footer .socialmedia .fa-twitter {
+  color: #23BCBA; }
 
 footer .address {
   line-height: 36px; }

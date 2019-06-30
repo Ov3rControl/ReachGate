@@ -29,6 +29,7 @@ $navbar-breakpoint: 1px;
 // Disable the fullhd breakpoint
 $fullhd-enabled: false;
 $tablet: 768px;
+$footer-padding: 3rem 1.5rem 2rem;
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
