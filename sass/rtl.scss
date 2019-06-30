@@ -1,6 +1,3 @@
-@charset "utf-8";
-
-// Set your brand colors
 
 $paragraphs-color:#7E8085;
 $background-color: rgb(255, 255, 255);
@@ -13,20 +10,21 @@ $main-green: #37D7A5;
 $bg-transperant: rgba(255, 255, 255, 0.9);
 // Update Bulma's global variables
 $gap: 130px;
-// Update some of Bulma's component variables
 $navbar-breakpoint: 1px;
 // Disable the fullhd breakpoint
 $fullhd-enabled: false;
 $tablet: 768px;
 $footer-padding: 3rem 1.5rem 2rem;
-// Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
-@import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/_all.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/components/_all.sass";
-@import "../node_modules/bulma/sass/layout/_all.sass";
-@import "../node_modules/bulma/sass/grid/_all.sass";
+
+@import "../node_modules/bulma-rtl/bulma-rtl.sass";
+@import "../node_modules/bulma-rtl/sass/utilities/_all.sass";
+@import "../node_modules/bulma-rtl/sass/base/_all.sass";
+@import "../node_modules/bulma-rtl/sass/elements/_all.sass";
+@import "../node_modules/bulma-rtl/sass/components/_all.sass";
+@import "../node_modules/bulma-rtl/sass/layout/_all.sass";
+@import "../node_modules/bulma-rtl/sass/grid/_all.sass";
+
+$navbar-breakpoint: 1px;
 
 @import "modules/navbar";
 @import "modules/ourStory";
@@ -37,5 +35,7 @@ $footer-padding: 3rem 1.5rem 2rem;
 @import "modules/newsletter";
 @import "modules/footer";
 
+//RTL Fixes
+@import "modules/rtl/steps";
 
 

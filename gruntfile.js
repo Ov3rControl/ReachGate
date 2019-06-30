@@ -8,7 +8,8 @@ module.exports = function(grunt) {
       
      app: {
 				files: {
-					'style.css': 'sass/style.scss',
+          'style.css': 'sass/style.scss',
+          'rtl.css': 'sass/rtl.scss',
 				}
 		 },
      options: {

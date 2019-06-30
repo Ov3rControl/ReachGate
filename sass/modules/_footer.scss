@@ -29,7 +29,11 @@ footer{
         align-items: flex-end;
         color: #999999;
     }
+    .footer-rtl{
+        text-align: end;
+    }
     .socialmedia{
+        text-align: end;
         .fab{
             padding: 0px 15px 0px 15px;
             font-size: 20px;

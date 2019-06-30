@@ -7,5 +7,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^2.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bulma-rtl": "^0.7.1"
+  }
 }

@@ -1,0 +1,7 @@
+.multi-steps{
+    > li {
+      &:after{
+      left: unset;
+          }
+      }
+  }
