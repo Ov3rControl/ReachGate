@@ -2,14 +2,46 @@ footer{
     h4{
         font-size: 26px;
         line-height: 39px;
-        color: #23BCBA;    }
+        color: #23BCBA;
+        margin-bottom:20px;
+    }
     p{
         padding:0px;
         font-size: 16px;
         line-height: 27px;
         color: #54565A;
+        margin-bottom:20px;
+    }
+    h6{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        color: #2F4B6E;
+    }
+    img{
+        opacity: 0.8;
+        border-radius: 6px;
     }
     .address{
         line-height: 36px;
     }
+    .control{
+        input{
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+            border-radius: 64px;
+            height: 45px;
+        }
+        textarea{
+            border-radius: 8px;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .subject{
+        margin-bottom: 20px;
+    }
+    button{
+        font-weight: 600 !important;
+        font-size: 16px !important;
+    }
+
 }
