@@ -6705,6 +6705,36 @@ label.panel-block {
 .is-half {
   text-align: center; }
 
+.video-wrapper {
+  position: relative; }
+
+.video-wrapper > video {
+  width: 100%;
+  vertical-align: middle; }
+
+.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+  display: none; }
+
+.video-overlay-play-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 10px calc(50% - 50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0.95;
+  cursor: pointer;
+  background-image: linear-gradient(transparent, #000);
+  transition: opacity 150ms; }
+
+.video-overlay-play-button:hover {
+  opacity: 1; }
+
+.video-overlay-play-button.is-hidden {
+  display: none; }
+
 .Title {
   color: #4399CE;
   font-weight: bold;
@@ -6759,6 +6789,13 @@ body {
 
 input, textarea {
   padding: 0px 20px 0px 20px !important; }
+
+.play-btn {
+  border-radius: 200px;
+  height: 75px;
+  width: 75px;
+  font-size: 30px;
+  line-height: 1px; }
 
 .multi-steps > li.is-active:before, .multi-steps > li.is-active ~ li:before {
   content: counter(stepNum);
