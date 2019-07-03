@@ -4,9 +4,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!------------------------------------[Font-Awesome]----------------------------------------->
-	<script src="https://kit.fontawesome.com/dc2192819a.js"></script>
+	<script src="https://kit.fontawesome.com/f3bfc035a5.js"></script>
 	<!------------------------------------[Styles]----------------------------------------->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="src/owl/assets/owl.carousel.min.css">
 	<!------------------------------------[FONTS]----------------------------------------->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 
 <body>
 	<!------------------------------------[Nav-Bar Section - START]----------------------------------------->
-<div class="main">
+<ul class="main">
 	<nav class="navbar is-transparent">
 			<div class="container is-fluid">
 				<div class="navbar-brand">
@@ -48,7 +49,40 @@
 	<!------------------------------------[Nav-Bar Section - END]------------------------------------------->
 
 	<!------------------------------------[Main-Slider Section - START]---------------------------------------->
-
+	<div class="slideshow-container">
+		
+			<div class="mySlides fade">
+			  <div class="numbertext">1 OF 3</div>
+			  <img src="/src/img/slider.png" style="width:100%">
+			  <div class="text">Reach Gate</div>
+			  <div class="slider-title">Reach you everywhere</div>
+			  <div class="subtitle">We offer complete package of services and delivering<br> tangible results. Whether you are corporate or individual<br> we can help your business to grow.</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 OF 3</div>
+			  <img src="/src/img/slider.png" style="width:100%">
+			  <div class="text">Reach Gate</div>
+			  <div class="slider-title">Reach you everywhere</div>
+			  <div class="subtitle">We offer complete package of services and delivering<br> tangible results. Whether you are corporate or individual<br> we can help your business to grow.</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 OF 3</div>
+			  <img src="/src/img/slider.png" style="width:100%">
+			  <div class="text">Reach Gate</div>
+			  <div class="slider-title">Reach you everywhere</div>
+			  <div class="subtitle">We offer complete package of services and delivering<br> tangible results. Whether you are corporate or individual<br> we can help your business to grow.</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">
+				<img src="/src/img/arrow.png">
+			</a>
+			<a class="next" onclick="plusSlides(1)">
+				<img src="/src/img/arrow1.png">
+			</a>
+			
+			</div>
 
 	<!------------------------------------[Main-Slider Section - END]----------------------------------------->
 
@@ -119,14 +153,14 @@
 				</div>
 			</div>
 			<div class="columns is-centered">
-				<div class="column is-one-quarter">
+				<div class="column is-two-fifths">
 					<img src="src/img/Shipping.png">
 					<h2 class="sub-title">Global & Local Shipping</h2>
 					<p class">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.
 							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
 					</p>
 				</div>
-				<div class="column is-one-quarter">
+				<div class="column is-two-fifths">
 					<img src="src/img/Insurance.png">
 					<h2 class="sub-title">Insurance</h2>
 					<p class">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.
@@ -222,25 +256,22 @@
 	<!------------------------------------[Our Products Section - END]------------------------------------------->
 
 	<!------------------------------------[NewsLetter Section - START]------------------------------------------->
-	<div class="section newsletter">
-		<div class="columns">
-			<div class="column column is-5 is-offset-1 is-centered is-hidden-mobile">
-				<div class="form">
-					<h5>Keep updated with our latest news.<br>Subscribe to our newsletter</h5>
-					<div class="field has-addons">
-						<div class="control">
-							<input class="input" type="text" placeholder="Enter Your Email">
-						</div>
-						<div class="control">
-							<a type="button" class="button btn-grad is-dark">
-								Subscribe
-							</a>
-						</div>
+    <div class="section newsletter">
+			<div class="form">
+				<h5 class="is-size-6-mobile">Keep updated with our latest news.<br>Subscribe to our newsletter</h5>
+				<div class="field has-addons">
+					<div class="control">
+						<input class="input" type="text" placeholder="Enter Your Email">
+					</div>
+	
+					<div class="control">
+						<a type="button" class="button btn-grad is-dark">
+							Subscribe
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<!------------------------------------[NewsLetter Section - END]------------------------------------------->
 
@@ -311,7 +342,12 @@
 	
 
 	<!------------------------------------[JavaScripts]----------------------------------------->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/src/owl/owl.carousel.min.js"></script>
 	<script src="/src/js/burger-menu.js"></script>
+	<script src="/src/js/slider.js"></script>
+
+
 </body>
 
 </html>
