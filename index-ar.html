@@ -1,12 +1,13 @@
-<html lang="ar">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<!------------------------------------[Font-Awesome]----------------------------------------->
-	<script src="https://kit.fontawesome.com/dc2192819a.js"></script>
+	<script src="https://kit.fontawesome.com/f3bfc035a5.js"></script>
 	<!------------------------------------[Styles]----------------------------------------->
 	<link rel="stylesheet" href="rtl.css">
+	<link rel="stylesheet" href="src/owl/assets/owl.carousel.min.css">
 	<!------------------------------------[FONTS]----------------------------------------->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
@@ -16,39 +17,84 @@
 
 <body>
 	<!------------------------------------[Nav-Bar Section - START]----------------------------------------->
-	<div class="main">
-		<nav class="navbar is-transparent">
-				<div class="container is-fluid">
-					<div class="navbar-brand">
-						<a class="navbar-item" href="https://richgate.com">
-							<img class="hero-img" src="src/img/Logo.png" alt="RichGate The Closest to you">
-						</a>
-					</div>
+<ul class="main">
+	<nav class="navbar is-transparent">
+			<div class="container is-fluid">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="https://richgate.com">
+						<img class="hero-img" src="src/img/Logo.png" alt="RichGate The Closest to you">
+					</a>
+			</div>
 
-					<div class="navbar-start">
-						<div class="navbar-item">
-							<a href="index.html"class="button is-danger">
-								<span class="icon">
-									<i class="fas fa-language"></i>
-								</span>
-								<span>English</span>
-							</a>
-						</div>
-					</div>
-					<div class="navbar-end">
-						<a href="" class="navbar-item">
-							<img src="src/img/Burger.png" alt="Menu" width="35" height="24">
-						</a>
-					</div>
+			<div class="navbar-start">
+				<div class="navbar-item">
+					<a href="index.html"class="button is-primary">
+							<span class="icon">
+								<i class="fas fa-language"></i>
+							</span>
+						<span>English</span>
+					</a>
 				</div>
-		</nav>
-	</div>
+			</div>
+			<div class="navbar-end">
+					<div class="menu-collapsed">
+							<div class="bar"></div>
+							<nav>
+							   <ul>
+								  <li><a href="#">Home</a></li>
+								  <li><a href="#">About</a></li>
+								  <li><a href="#">Clients</a></li>
+								  <li><a href="#">Contact Us</a></li>
+							   </ul>
+							</nav>
+						 </div>
+				<a href="" class="navbar-item">
+					<img src="src/img/Burger.png" alt="Menu" width="35" height="24">
+				</a>
+			</div>
+		</div>
+
+	</nav>
+</div>
 
 	<!------------------------------------[Nav-Bar Section - END]------------------------------------------->
 
 	<!------------------------------------[Main-Slider Section - START]---------------------------------------->
+	<div class="slideshow-container">
+		
+			<div class="mySlides fade">
+			  <div class="numbertext">1 OF 3</div>
+			  <img src="/src/img/slider.png" style="width:100%">
+			  <div class="text">Reach Gate</div>
+			  <div class="slider-title">Reach you everywhere</div>
+			  <div class="subtitle">We offer complete package of services and delivering<br> tangible results. Whether you are corporate or individual<br> we can help your business to grow.</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 OF 3</div>
+			  <img src="/src/img/slider.png" style="width:100%">
+			  <div class="text">Reach Gate</div>
+			  <div class="slider-title">Reach you everywhere</div>
+			  <div class="subtitle">We offer complete package of services and delivering<br> tangible results. Whether you are corporate or individual<br> we can help your business to grow.</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 OF 3</div>
+			  <img src="/src/img/slider.png" style="width:100%">
+			  <div class="text">Reach Gate</div>
+			  <div class="slider-title">Reach you everywhere</div>
+			  <div class="subtitle">We offer complete package of services and delivering<br> tangible results. Whether you are corporate or individual<br> we can help your business to grow.</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">
+				<img src="/src/img/arrow.png">
+			</a>
+			<a class="next" onclick="plusSlides(1)">
+				<img src="/src/img/arrow1.png">
+			</a>
+			
+			</div>
 
-										<!-- To Be made after wordpress integration -->
 	<!------------------------------------[Main-Slider Section - END]----------------------------------------->
 
 	<!------------------------------------[Our Story Section - START]------------------------------------------->
@@ -62,37 +108,38 @@
 				</div>
 			</div>
 			<div class="columns has-text-centered">
-				<div class="column has-text-centered">
-					<img src="src/img/mission.png">
-					<h2 class="sub-title is-uppercase">Mission</h2>
-					<p class="main-p">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.</p>
+					<div class="column has-text-centered">
+						<img src="src/img/mission.png">
+						<h2 class="sub-title is-uppercase">Mission</h2>
+						<p class="main-p">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.</p>
+					</div>
+					<div class="column has-text-centered">
+						<img src="src/img/vision.png">
+						<h2 class="sub-title is-uppercase">Vision</h2>
+						<p class="main-p">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.</p>
+					</div>
+					<div class="column has-text-centered" style="position: relative; top: -19px;">
+						<img src="src/img/value.png">
+						<h2 class="sub-title is-uppercase">Value</h2>
+						<p class="main-p">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.</p>
+					</div>
 				</div>
-				<div class="column has-text-centered">
-					<img src="src/img/vision.png">
-					<h2 class="sub-title is-uppercase">Vision</h2>
-					<p class="main-p">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.</p>
-				</div>
-				<div class="column has-text-centered" style="position: relative; top: -19px;">
-					<img src="src/img/value.png">
-					<h2 class="sub-title is-uppercase">Value</h2>
-					<p class="main-p">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.</p>
-				</div>
-			</div>
 		</div>
+
 	</div>
+
 	<!------------------------------------[Our Story Section - END]------------------------------------------->
 
 	<!------------------------------------[Our Services Section - START]------------------------------------------->
 	<div class="section our-services">
 		<div class="container">
 			<div class="columns is-centered">
-				<div class="column column is-half">
-					<h1 class="Title has-text-centered is-uppercase">Our Services</h1>
-					<p class="has-text-centered main-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-						The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+					<div class="column column is-half">
+						<h1 class="Title has-text-centered is-uppercase">Our Services</h1>
+						<p class="has-text-centered main-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+					</div>
 				</div>
-			</div>
-
 			<div class="columns">
 				<div class="column">
 					<img src="src/img/Exporting.png">
@@ -116,16 +163,15 @@
 					</p>
 				</div>
 			</div>
-
 			<div class="columns is-centered">
-				<div class="column is-one-quarter">
+				<div class="column is-two-fifths">
 					<img src="src/img/Shipping.png">
 					<h2 class="sub-title">Global & Local Shipping</h2>
 					<p class">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.
 							The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
 					</p>
 				</div>
-				<div class="column is-one-quarter">
+				<div class="column is-two-fifths">
 					<img src="src/img/Insurance.png">
 					<h2 class="sub-title">Insurance</h2>
 					<p class">The point using Lorem Ipsum is that it has a more-or-less normal distribution of letters.It is a long established fact that a reader.
@@ -133,7 +179,6 @@
 					</p>
 				</div>
 			</div>
-			<!-- See All Button -->
 			<div class="columns is-centered">
 				<div class="column column is-half">
 					<button type="button" class="button btn-grad is-dark">See all</button>
@@ -150,21 +195,25 @@
 			</div>
 			<div class="columns">
 				<div class="column">
-					<figure class="image">
-						<img class="video" src="src/img/video.png">
-					</figure>
+					<div class="video-wrapper">
+					<video id="video1" class="hero-video1" poster="/src/img/video.png">
+						<source src="/src/video/dummyvideo.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+						
+					</div>
 				</div>
 			</div>
 			<!-- Custom CSS Steps -->
 			<div class="container-fluid steps"> 
-				<br /><br />
-				<ul class="list-unstyled multi-steps">
-					<li class="is-active"></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
+					<br /><br />
+					<ul class="list-unstyled multi-steps">
+					  <li class="is-active"></li>
+					  <li></li>
+					  <li></li>
+					  <li></li>
+					</ul>
+				</div>
 
 			<div class="columns">
 				<div class="column">
@@ -175,6 +224,7 @@
 				</div>
 			</div>	
 			<!-- --------------------------------[How it Works - END] ----------------------------------------------->
+
 		</div>
 	</div>
 
@@ -307,7 +357,14 @@
 	
 
 	<!------------------------------------[JavaScripts]----------------------------------------->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="/src/owl/owl.carousel.min.js"></script>
 	<script src="/src/js/burger-menu.js"></script>
+	<script src="/src/js/slider.js"></script>
+	<script src="/src/js/video.js"></script>
+
+
+
 </body>
 
 </html>
